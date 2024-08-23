@@ -1,0 +1,146 @@
+
+
+/* General attributes */
+
+body{
+    margin: 0;
+}
+.container{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Working on left side of page (side bar) */
+.dashboard{
+    background-color: rgb(31, 168, 202);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    gap: 30px;
+    grid-area: 1/1 /3/ 2;
+    padding: 20px;
+
+    color: white;
+    font-weight: 600;
+}
+
+.logo-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.logo-container img{
+    height: 40px;
+    width: auto;
+}
+
+.user-actions, .support-actions{
+    gap: 10px;
+    padding: 5px;
+}
+
+.user-action, .support-action{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+/* Working on top of page */
+.header{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 10px;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 10% 0.9fr;
+    grid-template-rows: 0.2fr;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.search input{
+    background-color: rgba(211, 211, 211, 0.76);
+    border-width: 0;
+    border-radius: 10px;
+}
+
+.top-right{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 0.5fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.top-right img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.left-corner{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.profile-container img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+
+.file-options{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-right:30px;
+    margin-bottom:10px;
+    padding: 10px;
+}
+
+.file-option{
+    border-radius: 15px;
+    height: 40px;
+    width: auto;
+    background-color: blue;
+    color: white;
+}
+
+
+
+/* Working on content portion of the page */
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
