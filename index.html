@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,87 +12,247 @@
   </head>
   <body>
     <div class="container">
-      <div class="dashboard">
-        <div class="logo-container">
-          <img src="./icons/free-logo.jpg" alt="A random logo I used" />
-          <p class="comapany-name">Dashboard</p>
+      <div class="sidebar">
+        <div class="side-top">
+          <img src="./images/free-logo.jpg" alt="Free Logo" />
+          <p>Dashboard</p>
         </div>
-        <div class="user-actions">
-          <div class="user-action">
+        <div class="side-mid">
+          <div class="sidebar-option">
             <img src="./icons/home-icon.svg" alt="Home Icon" />
-            <p class="action">Home</p>
+            <p>Home</p>
           </div>
-          <div class="user-action">
+          <div class="sidebar-option">
             <img src="./icons/person-icon.svg" alt="Profile Icon" />
-            <p class="action">Profile</p>
+            <p>Profile</p>
           </div>
-          <div class="user-action">
+
+          <div class="sidebar-option">
             <img src="./icons/message-icon.svg" alt="Message Icon" />
-            <p class="action">Messages</p>
+            <p>Messages</p>
           </div>
-          <div class="user-action">
+          <div class="sidebar-option">
             <img src="./icons/history-icon.svg" alt="History Icon" />
-            <p class="action">History</p>
+            <p>History</p>
           </div>
-          <div class="user-action">
+          <div class="sidebar-option">
             <img src="./icons/task-icon.svg" alt="Task Icon" />
-            <p class="action">Tasks</p>
+            <p>Task</p>
           </div>
-          <div class="user-action">
+          <div class="sidebar-option">
             <img src="./icons/group-icon.svg" alt="Community Icon" />
-            <p class="action">Communities</p>
+            <p>Communities</p>
           </div>
         </div>
-        <div class="support-actions">
-          <div class="support-action">
+        <div class="side-bot">
+          <div class="sidebar-option">
             <img src="./icons/settings-icon.svg" alt="Settings Icon" />
-            <p class="action">Settings</p>
+            <p>Settings</p>
           </div>
-          <div class="support-action">
+          <div class="sidebar-option">
             <img src="./icons/support-icon.svg" alt="Support Icon" />
-            <p class="action">Support</p>
+            <p>Support</p>
           </div>
-          <div class="support-action">
+          <div class="sidebar-option">
             <img src="./icons/security-icon.svg" alt="Security Icon" />
-            <p class="action">Privacy</p>
+            <p>Security</p>
           </div>
         </div>
       </div>
       <div class="header">
-        <div class="search">
+        <div class="search-section">
           <img src="./icons/search-icon.svg" alt="Search Icon" />
-          <input type="text" name="search-bar" id="search-bar" />
+          <input type="text" name="query" id="search" />
         </div>
-        <div class="top-right">
+        <div class="profile-section">
           <img src="./icons/notification-icon.svg" alt="Notification Icon" />
-          <img src="./icons/glep.jpg" alt="Profile Picture" />
-          <p class="name">Emanuel Barcenas</p>
+          <img src="./images/glep.jpg" alt="Glep" class="pfp" />
+          <p class="bold">Name</p>
         </div>
-        <div class="left-corner">
-          <div class="profile-container">
-            <img src="./icons/glep.jpg" alt="Profile Picture" />
-          </div>
-          <div class="greetings">
-            <p id="Greeting">Hi, there,</p>
-            <p class="name">Emanuel Barcenas @(username)</p>
+        <div class="greetings-section">
+          <img src="./images/glep.jpg" alt="Glep" />
+          <div class="greeting">
+            <p class="bold">Hello there,</p>
+            <p class="bold">Emanuel Barcenas (@eman2point0)</p>
           </div>
         </div>
-        <div class="file-options">
-          <button class="file-option">New</button>
-          <button class="file-option">Upload</button>
-          <button class="file-option">Share</button>
+        <div class="action-section">
+          <input type="button" value="New" />
+          <input type="button" value="Upload" />
+          <input type="button" value="Share" />
         </div>
       </div>
-      <div class="content">
-        <div class="card-container">
-          <div class="card"></div>
+      <div class="main">
+        <div class="card-section">
+          <h3>My Projects</h3>
+          <div class="card-content">
+            <div class="card-container">
+              <div class="card">
+                <h4>Card title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  quidem sint laboriosam distinctio provident rerum! Dolorem
+                  nisi illum, ducimus eligendi nobis est, eaque laborum ipsa,
+                  sint esse deserunt inventore saepe!
+                </p>
+                <div class="card-options">
+                  <img src="./icons/eyeball-icon.svg" alt="Visibility Icon" />
+                  <img src="./icons/favorite-icon.svg" alt="Favorite Icon" />
+                  <img src="./icons/share-icon.svg" alt="Share Icon" />
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <h4>Card title</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores corporis vitae, natus doloremque repellendus
+                  voluptatem reiciendis repellat odio ea officiis! Nobis
+                  perferendis quam corrupti nisi quae officia! Blanditiis, quod
+                  error.
+                </p>
+                <div class="card-options">
+                  <img src="./icons/eyeball-icon.svg" alt="Visibility Icon" />
+                  <img src="./icons/favorite-icon.svg" alt="Favorite Icon" />
+                  <img src="./icons/share-icon.svg" alt="Share Icon" />
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <h4>Card title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, officia velit. Laudantium ut, rem iste
+                  voluptatibus labore ea similique sequi odio? Magni deserunt
+                  libero rerum similique, temporibus alias sit quibusdam?
+                </p>
+                <div class="card-options">
+                  <img src="./icons/eyeball-icon.svg" alt="Visibility Icon" />
+                  <img src="./icons/favorite-icon.svg" alt="Favorite Icon" />
+                  <img src="./icons/share-icon.svg" alt="Share Icon" />
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <h4>Card title</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                  ex ab quidem, placeat architecto veritatis rem quibusdam
+                  officia et omnis ipsum ipsam eligendi cumque dolorem maxime
+                  possimus facere earum provident.
+                </p>
+                <div class="card-options">
+                  <img src="./icons/eyeball-icon.svg" alt="Visibility Icon" />
+                  <img src="./icons/favorite-icon.svg" alt="Favorite Icon" />
+                  <img src="./icons/share-icon.svg" alt="Share Icon" />
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <h4>Card title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  culpa optio commodi iusto veritatis a earum provident ab dicta
+                  iste magni reiciendis, obcaecati, laboriosam sunt deleniti
+                  corrupti ipsum ullam maiores!
+                </p>
+                <div class="card-options">
+                  <img src="./icons/eyeball-icon.svg" alt="Visibility Icon" />
+                  <img src="./icons/favorite-icon.svg" alt="Favorite Icon" />
+                  <img src="./icons/share-icon.svg" alt="Share Icon" />
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <h4>Card title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  voluptatum mollitia ratione enim, molestias necessitatibus
+                  unde, sint, porro nisi distinctio aliquam culpa? Rerum
+                  doloremque iusto eum aliquam minus amet itaque?
+                </p>
+                <div class="card-options">
+                  <img src="./icons/eyeball-icon.svg" alt="Visibility Icon" />
+                  <img src="./icons/favorite-icon.svg" alt="Favorite Icon" />
+                  <img src="./icons/share-icon.svg" alt="Share Icon" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-container">
-          <div class="card"></div>
-        </div>
-        <div class="right-bar">
-          <div class="announcements"></div>
-          <div class="trending"></div>
+        <div class="main-sidebar">
+          <div class="announcement-section">
+            <h3>Announcements</h3>
+            <div class="announcement-content">
+              <div class="announcement">
+                <h4>Announcement Title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus dolorum explicabo error deleniti. Porro iure
+                  aliquid soluta, corporis accusamus eos, voluptatem aperiam
+                  quidem explicabo quis eaque, optio dolores expedita ratione.
+                </p>
+                <hr />
+              </div>
+              <div class="announcement">
+                <h4>Announcement Title</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis sint incidunt dolor, aspernatur animi accusantium id
+                  deserunt similique alias quaerat laboriosam voluptatem fuga
+                  blanditiis, tempore earum aliquid provident molestiae! Nemo!
+                </p>
+                <hr />
+              </div>
+              <div class="announcement">
+                <h4>Announcement Title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus commodi rem molestias, natus fugit sit enim cum
+                  libero inventore ducimus placeat aliquid ullam facilis.
+                  Cupiditate similique officiis est tenetur blanditiis?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="trending-section">
+            <h3>Trending</h3>
+            <div class="trending-content">
+              <div class="trending-account">
+                <img src="./images/charlie.png" alt="Charlie" class="pfp" />
+                <div class="info">
+                  <p class="bold">@Charlie</p>
+                  <p>Charlie</p>
+                </div>
+              </div>
+              <div class="trending-account">
+                <img src="./images/alan.png" alt="Alan" class="pfp" />
+                <div class="info">
+                  <p class="bold">@CheeseLover</p>
+                  <p>Alan</p>
+                </div>
+              </div>
+              <div class="trending-account">
+                <img src="./images/glep.jpg" alt="Glep" class="pfp" />
+                <div class="info">
+                  <p class="bold">@djakwid</p>
+                  <p>Glep</p>
+                </div>
+              </div>
+              <div class="trending-account">
+                <img src="./images/pip.png" alt="Pip" class="pfp" />
+                <div class="info">
+                  <p class="bold">@KidLover</p>
+                  <p>Pip</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
